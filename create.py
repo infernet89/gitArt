@@ -78,9 +78,9 @@ def createCommit(word):
 	return
 word="INFERNET89"
 word=" WAS  NOT "
-#word="  HERE?!  "
+word="  HERE?!  "
 printWord(word)
-year=2023
+year=2022
 createCommit(word)
 
 print("Done!")
