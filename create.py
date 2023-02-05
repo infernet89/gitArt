@@ -35,6 +35,9 @@ chars = {
     'Z': [0, 4, 5, 6, 7, 10, 11, 13, 14, 16, 17, 20, 21, 22, 23, 27],
     '8': [7,14,21,1,2,10,17,24,32,33,27,20,13,5,4,29,30],
     '9': [8,9,14,21,29,30,24,17,31,32,33,27,20,13],
+    '!': [20, 18,17,16,15,14],
+    '?': [20,18,17,24,30,29,21,14],
+    ' ': [] 
 }
 
 # visually print a word, for debug purposes
@@ -73,9 +76,11 @@ def createCommit(word):
 		#print(command)
 		os.system(command)
 	return
-
-printWord("INFERNET89")
-year=2024
-createCommit("INFERNET89")
+word="INFERNET89"
+word=" WAS  NOT "
+#word="  HERE?!  "
+printWord(word)
+year=2023
+createCommit(word)
 
 print("Done!")
