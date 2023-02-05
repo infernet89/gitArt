@@ -72,7 +72,7 @@ def createCommit(word):
 	for day in res:
 		command='git commit --date=\''
 		command+=(datetime.date(year, 1, 1) + datetime.timedelta(days=day)).strftime('%Y-%m-%d')
-		command+='\' -am \'gitArt day '+str(day)+'\' --allow-empty'
+		command+='\' -am \'gitArt '+word+' '+str(day)+'\' --allow-empty'
 		#print(command)
 		os.system(command)
 	return
