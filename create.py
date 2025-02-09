@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import subprocess
 import datetime
-import os
+import subprocess
 
 # We work with a 51x7 grid not counting first and last column. We can type 10 characters.
 
@@ -71,7 +71,8 @@ def createCommit(word):
 		command+=(datetime.date(year, 1, 1) + datetime.timedelta(days=day)).strftime('%Y-%m-%d')
 		command+='\' -am \'gitArt day '+str(day)+'\' --allow-empty'
 		print(command)
-		os.system("command")
+		outcmd = subprocess.getoutput(command)
+		print(outcmd)
 	return
 
 printWord("INFERNET89")
